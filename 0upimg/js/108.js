@@ -1,0 +1,2 @@
+﻿(function($){$.extend({disableCopyPaste:function(elm){var $elm=$(elm),ctrlDown=false,ctrlKey=17,cKey=67,vKey=86,xKey=88;elm.oncontextmenu=function(){return false;}
+$elm.keydown(function(e){if(e.keyCode==ctrlKey){ctrlDown=true;}}).keyup(function(e){if(e.keyCode==ctrlKey){ctrlDown=false;}});$elm.keydown(function(e){if(ctrlDown&&(e.keyCode==cKey||e.keyCode==vKey||e.keyCode==xKey)){return false;}});}});})(jQuery);$.disableCopyPaste(document);

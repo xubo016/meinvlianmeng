@@ -1,0 +1,3 @@
+﻿
+function AddFavorite(sURL,sTitle){try{top.external.addFavorite(sURL,sTitle);}catch(e){try{top.sidebar.addPanel(sTitle,sURL,"");}catch(e){alert("加入收藏失败，请使用Ctrl+D进行添加");}}}
+function SetHome(obj){try{obj.style.behavior='url(#default#homepage)';obj.setHomePage(top.location.href);}catch(e){if(window.netscape){try{netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");}catch(e){alert("您使用的浏览器不支持设为首页功能!\n\n      谢谢您对拓海的支持！");}}else{alert("您使用的浏览器不支持设为首页功能!\n\n      谢谢您对拓海的支持！");}}}
